@@ -15,3 +15,5 @@ extension String {
 }
 
 "Hello, world".fuzzyContains(string: "hello")
+"Hello, world".fuzzyContains(string: "WORLD")
+"Hello, world".fuzzyContains(string: "Goodbye")
