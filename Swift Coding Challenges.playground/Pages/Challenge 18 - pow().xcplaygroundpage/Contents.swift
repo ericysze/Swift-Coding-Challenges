@@ -52,13 +52,19 @@ assert(challenge18(number: 4, power: 3) == 64, "Challenge 18 failed")
 assert(challenge18(number: 2, power: 8) == 256, "Challenge 18 failed")
 
 // recursive solution
+// difference between recursive vs iterative functions: recursive version is - a little shorter,
+//     - a little clear & closer to the mathematical definition,
+//     - a little slower
 func challenge18b(number: Int, power: Int) -> Int {
     // if number and power inputs are greater than 0, execute the rest of the function, else exit the function by returning 0
     // guard puts more emphasis on the error condition whereas if let puts it more on the positive case, if the optional value can be bound to the let constant
     guard number > 0, power > 0 else { return 0 }
     
+    // a case for which the answer is known and can be expressed without recursion  is called a BASE CASE
+    // this BASE CASE is what makes the recursive function finite and brings the recursive calls to an end, in turn allowing all the functions that are called to return one by one to the very first
     if power == 1 { return number }
-    
+    // general case
+    // each successive recursion call should bring you closer to a situation in which the answer is known
     return number * challenge18b(number: number, power: power - 1)
 }
 
