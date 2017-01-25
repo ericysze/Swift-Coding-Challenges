@@ -10,5 +10,6 @@
         <page name='Challenge 17 - Rand Num Gen'/>
         <page name='Challenge 18 - pow()'/>
         <page name='Challenge 19 - Swap two nums'/>
+        <page name='Challenge 20 - Prime numbers'/>
     </pages>
 </playground>
