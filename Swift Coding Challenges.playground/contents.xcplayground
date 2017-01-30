@@ -12,5 +12,7 @@
         <page name='Challenge 19 - Swap two nums'/>
         <page name='Challenge 20 - Prime numbers'/>
         <page name='Challenge 37'/>
+        <page name='FizzBuzz for fun'/>
+        <page name='Bubble sort for fun'/>
     </pages>
 </playground>
