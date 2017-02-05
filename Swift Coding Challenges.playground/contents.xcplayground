@@ -14,5 +14,6 @@
         <page name='Challenge 37'/>
         <page name='FizzBuzz for fun'/>
         <page name='Bubble sort for fun'/>
+        <page name='Bubble sort again'/>
     </pages>
 </playground>
